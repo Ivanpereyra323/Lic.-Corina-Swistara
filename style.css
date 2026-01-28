@@ -400,3 +400,77 @@
     font-size: 1.1rem;
   }
 }
+
+
+/* Mod-atencion */
+
+/* ATENCION */
+.atencion-section{
+  background: #ffffff;
+  padding: 5rem 0;
+}
+
+.atencion-wrap{
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.atencion-title{
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 500;
+  margin: 0 0 3rem 0;
+}
+
+.atencion-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+
+.atencion-card{
+  background: #7E6B59; /* marrón de las cards */
+  border-radius: 18px;
+  padding: 3rem 2.5rem;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+.atencion-card-title{
+  color: #FAF7F3;
+  font-size: 2.2rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin: 0 0 2rem 0;
+}
+
+.atencion-card-text{
+  color: rgba(250,247,243,0.9);
+  font-size: 1.25rem;
+  line-height: 1.8;
+  margin: 0 0 2.2rem 0;
+}
+
+/* Variante chica del botón que YA tenés */
+.button-personalizado.button-sm{
+  font-size: 16px;          /* más chico */
+  padding-block: 0.35rem;   /* menos alto */
+  padding-inline: 0.9rem;   /* menos ancho */
+  border-width: 2px;        /* borde más fino */
+  gap: 6px;
+  display: inline-flex;     /* para que no se estire */
+}
+
+/* Mobile */
+@media (max-width: 991px){
+  .atencion-section{ padding: 3.5rem 0; }
+
+  .atencion-grid{
+    grid-template-columns: 1fr;
+  }
+
+  .atencion-card{
+    padding: 2.5rem 1.6rem;
+  }
+}
