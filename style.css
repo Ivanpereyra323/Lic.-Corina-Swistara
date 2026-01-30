@@ -597,8 +597,22 @@
   color: rgba(0,0,0,0.7);
 }
 
+
+.footer-link{
+  text-decoration: none;
+  color: inherit;
+  display: grid;
+  justify-items: center;
+  gap: 0.5rem;
+}
+.footer-link:hover{ opacity: 0.85; }
+
+
+
 @media (max-width: 991px){
   .footer-grid{ grid-template-columns: 1fr; }
 }
+
+
 
 
