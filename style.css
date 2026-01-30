@@ -614,5 +614,31 @@
 }
 
 
+/* Efecto oculto para el scroll */
+.reveal{
+  opacity: 0;
+  transform: translateY(14px);
+  transition: opacity .5s ease, transform .5s ease;
+}
 
+.reveal.is-visible{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+@media (prefers-reduced-motion: reduce){
+  .reveal{ transition: none; transform: none; opacity: 1; }
+}
+
+
+:root { --nav-offset: 130px; } /* probá 130–160 según cómo se vea */
+
+section[id], footer[id]{
+  scroll-margin-top: var(--nav-offset);
+}
+
+@media (max-width: 991px){
+  :root { --nav-offset: 110px; }
+}
 
